@@ -1,0 +1,1 @@
+{"id":"plex","name":"Plex","version":"@version@","description":"Plex provides a new experience for freedom servers.","url":"https://plex.us.org","authors":["Telesphoreo","Taah"],"dependencies":[],"main":"dev.plex.Plex"}

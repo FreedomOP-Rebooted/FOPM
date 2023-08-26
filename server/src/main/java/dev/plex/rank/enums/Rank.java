@@ -12,10 +12,13 @@ public enum Rank
 {
     IMPOSTOR(-1, "<aqua>an <yellow>Impostor<reset>", "Impostor", "<dark_gray>[<yellow>Imp<dark_gray>]", NamedTextColor.YELLOW),
     NONOP(0, "a <white>Non-Op<reset>", "Non-Op", "", NamedTextColor.WHITE),
-    OP(1, "an <green>Op<reset>", "Operator", "<dark_gray>[<green>OP<dark_gray>]", NamedTextColor.GREEN),
-    ADMIN(2, "an <dark_green>Admin<reset>", "Admin", "<dark_gray>[<green>Admin<dark_gray>]", NamedTextColor.DARK_GREEN),
-    SENIOR_ADMIN(3, "a <gold>Senior Admin<reset>", "Senior Admin", "<dark_gray>[<gold>SrA<dark_gray>]", NamedTextColor.GOLD),
-    EXECUTIVE(4, "an <red>Executive<reset>", "Executive", "<dark_gray>[<red>Exec<dark_gray>]", NamedTextColor.RED);
+    OP(1, "an <green>Op<reset>", "Operator", "<dark_gray>[<green>OP<dark_gray>]", NamedTextColor.GOLD),
+    ADMIN(2, "an <green>Admin<reset>", "Admin", "<dark_gray>[<green>Admin<dark_gray>]", NamedTextColor.GREEN),
+    TELNET_ADMIN(3, "a <dark_green>Telnet Admin<reset>", "Super Telnet Admin", "<dark_gray>[<dark_green>STA<dark_gray>]", NamedTextColor.GOLD),
+    SENIOR_ADMIN(4, "a <gold>Senior Admin<reset>", "Senior Admin", "<dark_gray>[<gold>SrA<dark_gray>]", NamedTextColor.GOLD),
+    EXECUTIVE(5, "an <red>Executive<reset>", "Executive", "<dark_gray>[<red>Exec<dark_gray>]", NamedTextColor.RED),
+    SYSTEM_ADMIN(6, "a <red>System Admin<reset>", "System Admin", "<dark_gray>[<red>Sys<dark_gray>]", NamedTextColor.RED);
+    
 
     private final int level;
     @Getter

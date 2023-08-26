@@ -74,8 +74,10 @@ public class AdminList implements PlexBase
             {
                 PreparedStatement statement = con.prepareStatement("SELECT * FROM `players` WHERE rank IN(?, ?, ?) AND adminActive=true");
                 statement.setString(1, Rank.ADMIN.name().toLowerCase());
-                statement.setString(2, Rank.SENIOR_ADMIN.name().toLowerCase());
-                statement.setString(3, Rank.EXECUTIVE.name().toLowerCase());
+                statement.setString(2, Rank.TELNET_ADMIN.name().toLowerCase());
+                statement.setString(3, Rank.SENIOR_ADMIN.name().toLowerCase());
+                statement.setString(4, Rank.EXECUTIVE.name().toLowerCase());
+                statement.setString(5, Rank.SYSTEM_ADMIN.name().toLowerCase());
 
                 ResultSet set = statement.executeQuery();
                 while (set.next())
@@ -111,8 +113,10 @@ public class AdminList implements PlexBase
             {
                 PreparedStatement statement = con.prepareStatement("SELECT * FROM `players` WHERE rank IN(?, ?, ?) AND adminActive=true");
                 statement.setString(1, Rank.ADMIN.name().toLowerCase());
-                statement.setString(2, Rank.SENIOR_ADMIN.name().toLowerCase());
-                statement.setString(3, Rank.EXECUTIVE.name().toLowerCase());
+                statement.setString(2, Rank.TELNET_ADMIN.name().toLowerCase());
+                statement.setString(3, Rank.SENIOR_ADMIN.name().toLowerCase());
+                statement.setString(4, Rank.EXECUTIVE.name().toLowerCase());
+                statement.setString(5, Rank.SYSTEM_ADMIN.name().toLowerCase());
 
                 ResultSet set = statement.executeQuery();
                 while (set.next())

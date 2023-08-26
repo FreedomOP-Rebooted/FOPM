@@ -192,6 +192,11 @@ public class RankManager
         return !plexPlayer.getRank().isEmpty() && plexPlayer.getRankFromString().isAtLeast(Rank.ADMIN) && plexPlayer.isAdminActive();
     }
 
+        public boolean isTelnetAdmin(PlexPlayer plexPlayer)
+    {
+        return !plexPlayer.getRank().isEmpty() && plexPlayer.getRankFromString().isAtLeast(Rank.TELNET_ADMIN) && plexPlayer.isAdminActive();
+    }
+
     public boolean isSeniorAdmin(PlexPlayer plexPlayer)
     {
         return !plexPlayer.getRank().isEmpty() && plexPlayer.getRankFromString().isAtLeast(Rank.SENIOR_ADMIN) && plexPlayer.isAdminActive();

@@ -124,6 +124,15 @@ public class CommandListener extends PlexListener
                     event.setCancelled(true);
                     event.getPlayer().sendMessage(cmd.getMessage());
                 }
+                case "t" ->
+                {
+                    if (plexPlayer.isAdminActive() && plexPlayer.getRankFromString().isAtLeast(Rank.TELNET_ADMIN))
+                    {
+                        return;
+                    }
+                    event.setCancelled(true);
+                    event.getPlayer().sendMessage(cmd.getMessage());
+                }
                 case "s" ->
                 {
                     if (plexPlayer.isAdminActive() && plexPlayer.getRankFromString().isAtLeast(Rank.SENIOR_ADMIN))
