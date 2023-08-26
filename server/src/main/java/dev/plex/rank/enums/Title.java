@@ -12,7 +12,7 @@ public enum Title
 {
     MASTER_BUILDER(0, "<aqua>a <dark_aqua>Master Builder<reset>", "Master Builder", "<dark_gray>[<dark_aqua>Master Builder<dark_gray>]", NamedTextColor.DARK_AQUA),
     DEV(1, "<aqua>a <dark_purple>Developer<reset>", "Developer", "<dark_gray>[<dark_purple>Developer<dark_gray>]", NamedTextColor.DARK_PURPLE),
-    OWNER(2, "<aqua>an <blue>Owner<reset>", "Owner", "<dark_gray>[<blue>Owner<dark_gray>]", NamedTextColor.BLUE);
+    OWNER(2, "<aqua>the <dark_red>Owner<reset>", "Owner", "<dark_gray>[<dark_red>Owner<dark_gray>]", NamedTextColor.DARK_RED);
 
     private final int level;
     @Getter

@@ -25,7 +25,7 @@ version = rootProject.version
 description = "FOPM-Server"
 
 shadowJar {
-    archiveBaseName.set("FreedomOp")
+    archiveBaseName.set("FreedomOPMod")
     archiveClassifier.set("")
     relocate "org.bstats", "dev.plex"
 }
