@@ -18,12 +18,12 @@ public class PlexLog
                 message = message.replace("{" + i + "}", strings[i].toString());
             }
         }
-        logger.info(PlexUtils.mmDeserialize("<yellow>[Plex] <gray>" + message));
+        logger.info(PlexUtils.mmDeserialize("<yellow>[FOPM] <gray>" + message));
     }
 
     public static void log(Component component)
     {
-        logger.info(Component.text("[Plex] ").color(NamedTextColor.YELLOW).append(component).colorIfAbsent(NamedTextColor.GRAY));
+        logger.info(Component.text("[FOPM] ").color(NamedTextColor.YELLOW).append(component).colorIfAbsent(NamedTextColor.GRAY));
     }
 
     public static void error(String message, Object... strings)
@@ -35,7 +35,7 @@ public class PlexLog
                 message = message.replace("{" + i + "}", strings[i].toString());
             }
         }
-        logger.error(PlexUtils.mmDeserialize("<red>[Plex Error] <gold>" + message));
+        logger.error(PlexUtils.mmDeserialize("<red>[FOPM Error] <gold>" + message));
     }
 
     public static void warn(String message, Object... strings)
@@ -47,7 +47,7 @@ public class PlexLog
                 message = message.replace("{" + i + "}", strings[i].toString());
             }
         }
-        logger.warn(PlexUtils.mmDeserialize("<#eb7c0e>[Plex Warning] <gold>" + message));
+        logger.warn(PlexUtils.mmDeserialize("<#eb7c0e>[FOPM Warning] <gold>" + message));
     }
 
     public static void debug(String message, Object... strings)
@@ -61,7 +61,7 @@ public class PlexLog
                     message = message.replace("{" + i + "}", strings[i].toString());
                 }
             }
-            logger.info(PlexUtils.mmDeserialize("<dark_purple>[Plex Debug] <gold>" + message));
+            logger.info(PlexUtils.mmDeserialize("<dark_purple>[FOPM Debug] <gold>" + message));
         }
     }
 }

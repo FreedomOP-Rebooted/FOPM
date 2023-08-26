@@ -2,7 +2,7 @@
 # For documentation, please visit: https://docs.plex.us.org
 
 server:
-  name: "Plexus"
+  name: "FreedomOP"
   motd: "%servername% - Minecraft %mcversion%"
   colorize_motd: true
   sample:
@@ -11,13 +11,13 @@ server:
   timezone: Etc/UTC
 
 titles:
-  masterbuilders: [ ]
+  masterbuilders: [_win9x_]
   owners:
-    - Telesphoreo
+    - wanckinq
 
 # Ban message is customized in the messages.yml file. The URL to appeal at is below.
 banning:
-  ban_url: "https://forum.plex.us.org"
+  ban_url: "https://freedomop.us.to"
 
 chat:
   # Should the server use Plex's chat system? It is recommended to keep this on if you are using ranks.
@@ -234,7 +234,7 @@ worlds:
       bedrock: 1
 
 # If you are running a custom fork of Plex, you may wish to check for updates from a different repository.
-update_repo: "plexusorg/Plex"
+update_repo: "FreedomOP-Rebooted/FOPM"
 
 # What branch should Plex fetch updates from?
 update_branch: "master"

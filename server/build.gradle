@@ -22,18 +22,18 @@ dependencies {
 
 group = rootProject.group
 version = rootProject.version
-description = "Plex-Server"
+description = "FOPM-Server"
 
 shadowJar {
-    archiveBaseName.set("Plex")
+    archiveBaseName.set("FreedomOp")
     archiveClassifier.set("")
     relocate "org.bstats", "dev.plex"
 }
 
 paper {
-    name = "Plex"
+    name = "FreedomOPMod"
     version = project.version
-    description = "Plex provides a new experience for freedom servers."
+    description = "FOPM provides a new experience for freedom servers."
     main = "dev.plex.Plex"
     loader = "dev.plex.PlexLibraryManager"
     website = "https://plex.us.org"
