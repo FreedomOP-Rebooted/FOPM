@@ -6,7 +6,7 @@
 #############################
 
 [server]
-name = "Plexus"
+name = "FreedomOPMod"
 
 # Placeholders
 # %mcversion% - The Velocity Version (i.e. 3.1.2-SNAPSHOT)
