@@ -103,7 +103,7 @@ public abstract class PlexCommand extends Command implements PluginIdentifiableC
      * @param playerSender The player who executed the command (null if CommandSource is console or if CommandSource is any but console executed)
      * @param args         A Kyori Component to send to the sender (can be null)
      */
-    protected abstract Component execute(@NotNull CommandSender sender, @Nullable Player playerSender, @NotNull String[] args);
+    protected abstract Component execute(@NotNull CommandSender sender, @Nullable Player playerSender, @NotNull String[] args) throws InterruptedException;
 
     /**
      * @hidden
@@ -216,7 +216,8 @@ public abstract class PlexCommand extends Command implements PluginIdentifiableC
             }
         }
         catch (PlayerNotFoundException | CommandFailException | ConsoleOnlyException |
-               ConsoleMustDefinePlayerException | PlayerNotBannedException | NumberFormatException ex)
+               ConsoleMustDefinePlayerException | PlayerNotBannedException | NumberFormatException |
+               InterruptedException ex)
         {
             send(sender, PlexUtils.mmDeserialize(ex.getMessage()));
         }

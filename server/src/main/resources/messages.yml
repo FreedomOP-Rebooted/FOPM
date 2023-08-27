@@ -16,6 +16,7 @@
 banMessage: "<red>You have been banned! You may appeal at <gold>{0}.\n<red>Reason: <gold>{1}\n<red>End date: <gold>{2}\n<red>Banned by: <gold>{3}"
 # 0 - Reason
 # 1 - Punisher
+gommehBan: "<red>Your username is not Gommeh, so you can't execute this command!"
 kickMessage: "<red>You have been kicked! \n<red>Reason: <gold>{0}\n<red>Kicked by: <gold>{1}"
 # 0 - The type of indefinite ban
 # 1 - Appeal URL
@@ -110,6 +111,8 @@ yourRank: "<blue>Your rank is: {0}"
 otherRank: "<blue>{0}'s rank is: {1}"
 # 0 - The command sender
 # 1 - The player
+gommehBanningPlayer: "Gommeh - Banning {0}"
+# 0 - the player
 banningPlayer: "<red>{0} - Banning {1}"
 # 0 - The command sender
 # 1 - The player
